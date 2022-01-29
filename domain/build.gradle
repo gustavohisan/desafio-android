@@ -1,0 +1,11 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir/config/android_dependencies.gradle"
+
+dependencies {
+    implementation Deps.koin.core
+    implementation Deps.timber
+
+    testImplementation Deps.test.junit5_engine
+    testImplementation Deps.test.junit5_runner
+    testImplementation Deps.test.coroutines_test
+}

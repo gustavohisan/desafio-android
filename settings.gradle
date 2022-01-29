@@ -1,1 +1,7 @@
 include ':app'
+include ':features:contacts'
+include ':domain'
+include ':data:repository'
+include ':data:cache'
+include ':data:api'
+include ':libraries:design'

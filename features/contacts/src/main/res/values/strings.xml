@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="contacts_screen_title">Contatos</string>
+    <string name="contact_picture_description">Foto de</string>
+    <string name="contacts_screen_empty_message">Nenhum contato encontrado.</string>
+    <string name="contacts_screen_error_message">Ocorreu um erro ao tentar carregar a lista de contatos.</string>
+</resources>

@@ -1,0 +1,18 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir/config/android_dependencies.gradle"
+apply plugin: 'kotlin-kapt'
+
+android {
+    packagingOptions {
+        exclude 'META-INF/atomicfu.kotlin_module'
+    }
+}
+
+dependencies {
+    implementation project(":data:repository")
+
+    implementation Deps.koin.core
+    implementation Deps.timber
+    implementation Deps.room.ktx
+    kapt Deps.room.compiler
+}
